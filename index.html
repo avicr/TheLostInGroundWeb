@@ -64,6 +64,7 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
+          fullscreenButton.visible = false;
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             ;
